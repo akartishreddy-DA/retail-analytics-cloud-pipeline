@@ -139,20 +139,30 @@ Average order value calculation
 Executive KPI reporting
 
 📂 Project Structure
-retail-intelligence-cloud-platform/
-│
-├── docs/
-│   └── retail_intelligence_architecture.drawio
-│
-├── snowflake_sql/
-│   ├── 01_SCD_TYPE2_CUSTOMER.sql
-│   ├── 02_SCD_AUTOMATION.sql
-│   ├── 03_FACT_LAYER.sql
-│   ├── 04_DIM_DATE.sql
-│   └── 05_PROJECT_DASHBOARDS.sql
-│
-├── .gitignore
-└── README.md
+The repository is organized into the following main components:
+
+docs/
+Contains project documentation and architecture assets.
+Includes the system architecture diagram illustrating data flow from raw ingestion to executive reporting.
+
+snowflake_sql/
+Contains all Snowflake SQL scripts used to build and automate the data warehouse:
+
+01_SCD_TYPE2_CUSTOMER.sql – Builds the customer dimension using SCD Type 2 logic
+
+02_SCD_AUTOMATION.sql – Implements Snowflake Stream and Task for automated dimension updates
+
+03_FACT_LAYER.sql – Creates the fact table and analytical summary views
+
+04_DIM_DATE.sql – Builds and populates the date dimension
+
+05_PROJECT_DASHBOARDS.sql – Creates executive and regional analytics views
+
+.gitignore
+Specifies files and system artifacts excluded from version control.
+
+README.md
+Provides project overview, architecture explanation, implementation details, and usage guidance.
 
 🛠 Technologies Used
 
