@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.4.0">
+  <diagram name="Page-1" id="r1ZhJQXDdMEf40unX_9D">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FsSuglo57GM5OvizDjmG-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;RAW RETAIL DATA&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;• CUSTOMER_GOLD (Staging)&lt;/div&gt;&lt;div&gt;• Sales Transactions&lt;/div&gt;&lt;div&gt;• Marketing Spend&lt;/div&gt;&lt;div&gt;• Inventory&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="130" x="10" y="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="&lt;div&gt;SNOWFLAKE DATA WAREHOUSE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;STAGING:&lt;/div&gt;&lt;div&gt;- CUSTOMER_GOLD&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DIMENSIONS:&lt;/div&gt;&lt;div&gt;- DIM_CUSTOMER_SCD (SCD Type 2)&lt;/div&gt;&lt;div&gt;- DIM_DATE&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FACT:&lt;/div&gt;&lt;div&gt;- FACT_SALES&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="190" x="210" y="-35" as="geometry" />
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;AUTOMATION&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Stream:&lt;/div&gt;&lt;div&gt;- CUSTOMER_GOLD_STREAM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Task:&lt;/div&gt;&lt;div&gt;- SCD_CUSTOMER_TASK&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="170" x="460" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;ANALYTICS VIEWS&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- VW_YEARLY_REVENUE&lt;/div&gt;&lt;div&gt;- VW_REVENUE_BY_REGION&lt;/div&gt;&lt;div&gt;- VW_EXECUTIVE_DASHBOARD&lt;/div&gt;&lt;div&gt;- VW_FULL_DASHBOARD&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="190" x="680" y="32.5" as="geometry" />
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;BI DASHBOARD&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Executive Reporting&lt;/div&gt;&lt;div&gt;- Revenue Trends&lt;/div&gt;&lt;div&gt;- Regional Analysis&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="140" x="930" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-7" edge="1" parent="1" source="FsSuglo57GM5OvizDjmG-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="139" as="sourcePoint" />
+            <mxPoint x="200" y="88" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-8" edge="1" parent="1" source="FsSuglo57GM5OvizDjmG-3" style="endArrow=classic;html=1;rounded=0;exitX=1.04;exitY=0.507;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="540" y="160" as="sourcePoint" />
+            <mxPoint x="450" y="61" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-9" edge="1" parent="1" source="FsSuglo57GM5OvizDjmG-4" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="710" y="210" as="sourcePoint" />
+            <mxPoint x="670" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FsSuglo57GM5OvizDjmG-10" edge="1" parent="1" source="FsSuglo57GM5OvizDjmG-5" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="400" as="sourcePoint" />
+            <mxPoint x="920" y="92" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
